@@ -1,0 +1,25 @@
+# config/focus.yaml — change this file to change what the AI hunts for
+
+chain: "bsc"                 # BNB Chain
+chain_id: 56
+
+# Choose one or more focus areas:
+focus_areas:
+  - access_control
+  - unlimited_mint
+  - gas_only_exploits
+
+# Optional: restrict to specific gas-only bug classes
+gas_only_classes:
+  - gas_griefing_63_64
+  - unbounded_loop_dos
+  - 2300_gas_stipend_freeze
+  - return_bomb
+  - state_bloat
+  - relayer_gas_drain
+
+# How many top-TVL BNB protocols to audit per run
+max_targets: 10
+
+# Minimum confidence (0.0–1.0) for a bug to be confirmed
+confidence_threshold: 0.7

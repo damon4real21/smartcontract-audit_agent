@@ -1,0 +1,13 @@
+# Environment Variables (NEVER PUSH THIS)
+.env
+
+# Generated smart contracts and reports
+contracts/
+reports/
+processed.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+SolScan-Vulnerability-Scanner/
